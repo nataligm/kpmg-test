@@ -1,2 +1,23 @@
 import '../styles/index.sass';
-console.log('Hi');
+
+document.addEventListener('DOMContentLoaded', () => {
+    const scroller = document.querySelector(".scroll-to-see");
+    if(scroller !== null) {
+        scroller.addEventListener('click', () => {
+            const weOffer = document.querySelector(".we-offer");
+            if(weOffer !== null) {
+                weOffer.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+            }
+        });
+    }
+
+    const languageSelect = document.querySelector(".language-select");
+    if (languageSelect !== null) {
+        languageSelect.addEventListener('click', () => {
+            const dropdown = document.querySelector(".select-lang-list");
+            if(dropdown !== null) {
+                dropdown.classList.toggle('visible')
+            }
+        })
+    }
+});

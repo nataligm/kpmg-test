@@ -1,0 +1,56 @@
+.footer
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-top: 39px
+  .contact-us
+    line-height: 13px
+    font-size: 12px
+    color: #3d5089
+    margin-bottom: 22px
+    a
+      text-decoration: underline
+      color: #3697d1
+  .footer-nav-bar
+    width: 100%
+    max-width: 1121px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin-bottom: 15px
+    @media only screen and (max-width: 1025px)
+      flex-wrap: wrap
+
+    .footer-link
+      text-align: center
+      padding-top: 5px
+      padding-bottom: 6px
+      //padding-left: 10px
+      //padding-right: 10px
+      text-decoration: underline
+      color: #3697d1
+      font-size: 10px
+      line-height: 10px
+      width: 100%
+      max-width: 161px
+      box-sizing: border-box
+      //border-left: 1px solid #223b7e
+      border-right: 1px solid #223b7e
+      margin-bottom: 10px
+      white-space: nowrap
+      &:last-child
+        border: none
+      @media only screen and (max-width: 1025px)
+        border-left: 1px solid #223b7e
+        //border-right: 1px solid #223b7e
+
+        &:last-child
+          border-left: 1px solid #223b7e
+          border-right: 1px solid #223b7e
+  .ltd
+    max-width: 617px
+    text-align: center
+    font-size: 10px
+    color: #223b7e
+    margin-bottom: 23px
+
