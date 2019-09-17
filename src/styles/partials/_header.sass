@@ -1,0 +1,195 @@
+.header
+  background-color: $nav-bg
+  //background-image: linear-gradient(180deg, $nav-bg 50%, rgb(255, 255, 255) 1%, $nav-bg 51%)
+  display: flex
+  justify-content: center
+  padding: 0 15px 26px
+  position: relative
+  .nav-bar
+    display: flex
+    width: 100%
+    justify-content: space-between
+    align-items: center
+    color: #fff
+    max-width: 1140px
+    padding-top: 28px
+    @media only screen and (max-width: 915px)
+      flex-direction: column
+
+
+    .logo-link, .nav-link-group, .nav-link-group .nav-link, .challenge-btn
+      margin-right: 10px
+
+    .brand
+      display: flex
+      width: 454px
+      justify-content: space-between
+      margin-right: 30px
+      align-self: flex-start
+      padding-top: 6px
+      @media only screen and (max-width: 915px)
+        align-self: center
+        margin-bottom: 25px
+        margin-right: 0
+
+      .logo-link
+        //margin-right: 17px
+        min-width: 67px
+        width: 67px
+        .logo-img
+          width: 100%
+      .brand-text
+        @include font-main-bold
+        font-size: 30px
+        line-height: 23px
+        padding-top: 4px
+        //margin-right: 23px
+        white-space: nowrap
+        align-self: flex-start
+
+    .right-nav-side
+      display: flex
+      flex-grow: 1
+      max-width: 602px
+      justify-content: space-between
+      @media only screen and (max-width: 915px)
+        width: 100%
+        flex-grow: initial
+
+      .nav-link-group
+        font-size: 12px
+        max-width: 225px
+        flex-grow: 1
+        display: flex
+        align-items: center
+        justify-content: space-between
+        //margin-right: 71px
+
+        .nav-link
+          padding-bottom: 4px
+          padding-top: 4px
+          height: fit-content
+          text-decoration: none
+          border-bottom: 1px solid transparent
+        .nav-link:hover
+          border-bottom: 1px solid #fff
+        .nav-link:first-child
+          margin-right: 19px
+        .nav-link:last-child
+          margin-right: 0
+
+      .challenge-btn
+        box-sizing: border-box
+        text-align: center
+        text-transform: uppercase
+        padding-top: 12.5px
+        width: 201px
+        height: 41px
+        min-width: 201px
+        border-radius: 20px
+        border: 1px solid #1c8ece
+        font-size: 16px
+        line-height: 11px
+      //margin-right: 71px
+      .burger-m-language
+        text-transform: uppercase
+        font-family: CirceRegular, sans-serif
+        display: flex
+        position: relative
+        align-items: center
+      //
+      //  .burger-menu
+      //    font-size: 14px
+      //    letter-spacing: 1.4px
+      //    display: flex
+      //    position: relative
+      //    margin-right: 124px
+      //    padding-left: 39px
+      //
+      //    #check-menu
+      //      display: none
+      //    .navigation
+      //      visibility: hidden
+      //      opacity: 0
+      //      order: 3
+      //      position: absolute
+      //      top: 84px
+      //      width: 193px
+      //      left: -36px
+      //      z-index: 10
+      //      transition: .5s all
+      //
+      //      .nav-link
+      //        display: block
+      //        text-align: center
+      //        padding-top: 20px
+      //        &:last-child
+      //          padding-bottom: 20px
+      //    .burger-line
+      //      width: 29px
+      //      height: 2px
+      //      background-color: #FFFFFF
+      //      position: absolute
+      //      left: 0
+      //      top: 18px
+      //      transition: .5s all
+      //    .second-l
+      //      top: 24px
+      //    .third-l
+      //      top: 24px
+      //    .burger-label
+      //      max-width: 50px
+      //      line-height: 45px
+      //
+      //    #check-menu:checked ~ .navigation
+      //      visibility: visible
+      //      opacity: 1
+      //    #check-menu:checked ~ .first-l
+      //      display: none
+      //    #check-menu:checked ~ .second-l
+      //      transform: rotate(-45deg)
+      //    #check-menu:checked ~ .third-l
+      //      transform: rotate(45deg)
+      .language-select
+        width: 37px
+        display: flex
+        text-transform: uppercase
+        //align-items: center
+        justify-content: space-between
+        cursor: pointer
+        span
+          font-size: 12px
+          margin-right: 5px
+      //    lang arrow **********************************
+      .lang-arrow
+        width: 16px
+        height: 10px
+        position: relative
+        &:after
+          position: absolute
+          content: ''
+          width: 10px
+          height: 10px
+          left: 0
+          top: -5px
+          border: solid #fff
+          border-width: 0 1px 1px 0
+          transform: rotate(45deg)
+      //    end of lang arrow *************************************
+      .select-lang-list
+        position: absolute
+        top: 57px
+        display: none
+        right: -3px
+        z-index: 9
+        //background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+        .lang-selector
+          display: block
+          padding: 20px 20px 0
+          font-size: 14px
+          text-align: center
+          &:last-child
+            padding-bottom: 20px
+
+
+

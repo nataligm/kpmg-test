@@ -1,0 +1,99 @@
+.we-offer
+  padding-top: 83px
+  padding-bottom: 114px
+  display: flex
+  justify-content: center
+
+  .container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-items: center
+    max-width: 811px
+    .title-wrap
+      text-align: center
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 95px
+      h2
+        font-size: 36px
+        color: $h2-color
+        text-transform: uppercase
+        font-weight: 400
+        margin-bottom: 34px
+      .description
+        max-width: 768px
+        color: $nav-bg
+        font-size: 14px
+        height: 29px
+    .content
+      display: flex
+      justify-content: space-between
+      width: 100%
+
+      h3
+        text-transform: uppercase
+        color: $h2-color
+        font-size: 16px
+        text-align: center
+      .first-col-cont
+        margin-right: 74px
+        max-width: 170px
+        .first-head-wrap
+          padding-right: 26px
+        h3:first-of-type
+          margin-bottom: 22px
+
+        .offer-descr
+          margin-bottom: 152px
+          font-size: 12px
+          text-align: center
+          color: $nav-bg
+      .second-col-cont
+        margin-right: 81px
+        text-align: center
+        .kpmg-circle
+          width: 278px
+          height: 278px
+          text-align: center
+          border: 1px solid rgba(34, 59, 126, 0.2)
+          border-radius: 50%
+          box-sizing: border-box
+          display: flex
+          align-items: center
+          margin-top: 13px
+          position: relative
+          &:before
+            position: absolute
+            content: ''
+            width: 12px
+            height: 12px
+            border-radius: 50%
+            background-color: $nav-bg
+            top: 81px
+            left: 5px
+          &:after
+            position: absolute
+            content: ''
+            width: 12px
+            height: 12px
+            border-radius: 50%
+            background-color: $nav-bg
+            top: 60px
+            left: 16px
+
+          span
+            @include font-main-bold
+            font-size: 50px
+            line-height: 58px
+            font-weight: 700
+            color: #1b5eaa
+            text-transform: uppercase
+      .third-col-cont
+        max-width: 203px
+        h3:first-of-type
+          margin-top: 11px
+          margin-bottom: 199px
+      .col
+        width: 100%

@@ -1,0 +1,17 @@
+{
+  "presets": [
+    "es2015"
+  ],
+  "env": {
+    "server": {
+      "plugins": [
+        [
+          "css-modules-transform", {
+          "generateScopedName": "[hash:8]",
+          "extensions": [".css", ".sass"]
+        }
+        ]
+      ]
+    }
+  }
+}
