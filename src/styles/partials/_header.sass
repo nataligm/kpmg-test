@@ -1,10 +1,49 @@
 .header
   background-color: $nav-bg
-  //background-image: linear-gradient(180deg, $nav-bg 50%, rgb(255, 255, 255) 1%, $nav-bg 51%)
   display: flex
   justify-content: center
   padding: 0 15px 26px
   position: relative
+  @media only screen and (max-width: 660px)
+    justify-content: flex-end
+    box-sizing: border-box
+    height: 95px
+    padding-bottom: 0
+    padding-left: 100px
+    padding-top: 30px
+
+    .nav-bar.visible
+      display: block
+      position: absolute
+      top: 95px
+      left: 0
+      width: 100%
+      background-color: $nav-bg
+      z-index: 10
+
+  .burger-menu
+    display: none
+    @media only screen and (max-width: 660px)
+      display: block
+      width: 32px
+      height: 32px
+      position: relative
+      .burger-line
+        width: 32px
+        height: 4px
+        background-color: #fff
+        position: absolute
+        right: 0
+        top: 0
+        transition: .5s all
+      .second-l
+        top: 11px
+      .third-l
+        top: 22px
+      .burger-label
+        max-width: 50px
+        line-height: 45px
+
   .nav-bar
     display: flex
     width: 100%
@@ -15,7 +54,8 @@
     padding-top: 28px
     @media only screen and (max-width: 915px)
       flex-direction: column
-
+    @media only screen and (max-width: 660px)
+      display: none
 
     .logo-link, .nav-link-group, .nav-link-group .nav-link, .challenge-btn
       margin-right: 10px
@@ -31,6 +71,10 @@
         align-self: center
         margin-bottom: 25px
         margin-right: 0
+      @media only screen and (max-width: 660px)
+        flex-direction: column
+        align-items: center
+        width: 100%
 
       .logo-link
         min-width: 67px
@@ -45,6 +89,8 @@
         //margin-right: 23px
         white-space: nowrap
         align-self: flex-start
+        @media only screen and (max-width: 660px)
+          align-self: center
 
     .right-nav-side
       display: flex
@@ -54,6 +100,9 @@
       @media only screen and (max-width: 915px)
         width: 100%
         flex-grow: initial
+      @media only screen and (max-width: 660px)
+        flex-direction: column
+        align-items: center
 
       .nav-link-group
         font-size: 12px
@@ -62,6 +111,8 @@
         display: flex
         align-items: center
         justify-content: space-between
+        @media only screen and (max-width: 660px)
+          margin-bottom: 25px
 
         .nav-link
           padding-bottom: 4px
@@ -88,6 +139,8 @@
         border: 1px solid #1c8ece
         font-size: 16px
         line-height: 11px
+        @media only screen and (max-width: 660px)
+          margin-bottom: 25px
 
       .burger-m-language
         text-transform: uppercase
@@ -95,6 +148,8 @@
         display: flex
         position: relative
         align-items: center
+        @media only screen and (max-width: 660px)
+          margin-bottom: 25px
         .language-select
           width: 37px
           display: flex
@@ -124,6 +179,7 @@
         .select-lang-list.visible
           display: block
         .select-lang-list
+          background-color: rgba(0, 0, 0, 0.5)
           position: absolute
           top: 35px
           display: none
@@ -137,62 +193,3 @@
             text-align: center
             &:last-child
               padding-bottom: 20px
-
-
-
-          //#check-menu
-          //  display: none
-          //.navigation
-          //  visibility: hidden
-          //  opacity: 0
-          //  order: 3
-          //  position: absolute
-          //  top: 84px
-          //  width: 193px
-          //  left: -36px
-          //  z-index: 10
-          //  transition: .5s all
-
-            .nav-link
-              display: block
-              text-align: center
-              padding-top: 20px
-              &:last-child
-                padding-bottom: 20px
-      .burger-line
-        width: 29px
-        height: 2px
-        background-color: #FFFFFF
-        position: absolute
-        left: 0
-        top: 18px
-        transition: .5s all
-      .second-l
-        top: 24px
-      .third-l
-        top: 24px
-      .burger-label
-        max-width: 50px
-        line-height: 45px
-
-          //#check-menu:checked ~ .navigation
-          //  visibility: visible
-          //  opacity: 1
-          //#check-menu:checked ~ .first-l
-          //  display: none
-          //#check-menu:checked ~ .second-l
-          //  transform: rotate(-45deg)
-          //#check-menu:checked ~ .third-l
-          //  transform: rotate(45deg)
-
-
-//@media screen and (max-width: 941px)
-.header
-  height: 95px
-  .burger-menu
-    //font-size: 14px
-    //letter-spacing: 1.4px
-    //display: flex
-    position: relative
-    //margin-right: 124px
-    //padding-left: 39px

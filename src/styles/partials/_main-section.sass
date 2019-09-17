@@ -14,6 +14,10 @@
     padding-right: 174px
     margin-bottom: 111px
     font-weight: 400
+    @media only screen and (max-width: 935px)
+      padding-right: 0
+      width: 100%
+  //max-width: 100%
   .points-of-success
     position: relative
     display: flex
@@ -28,6 +32,9 @@
       align-items: flex-start
       justify-content: space-between
       width: 100%
+      @media only screen and (max-width: 935px)
+        flex-direction: column
+        width: fit-content
 
     .point
       min-width: 111px
@@ -38,10 +45,11 @@
       padding-top: 121px
       padding-left: 58px
       padding-right: 58px
-      //&:first-child
-      //  margin-right: 187px
-      //&:nth-child(2)
-       // margin-right: 121px
+      @media only screen and (max-width: 935px)
+        &:first-child
+          padding-top: 0
+        &:nth-child(2)
+          margin-bottom: 35px
 
       h3
         font-size: 16px
@@ -83,10 +91,21 @@
       background-color: #1b5eaa
       opacity: 0.2
       z-index: 1
+      @media only screen and (max-width: 935px)
+        top: 0
+        left: 50%
+        height: 650px
+        width: fit-content
+        border-bottom: none
+        border-right: 1px solid #fff
+
   .scroll-to-see
     display: flex
     align-items: center
-    width: 153px
+    width: 193px
     font-size: 12px
+    span
+      padding: 0 10px
+      white-space: nowrap
     .scroll-img
       width: 28px

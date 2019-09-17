@@ -31,6 +31,10 @@
       justify-content: space-between
       width: 100%
 
+      @media only screen and (max-width: 685px)
+        flex-direction: column
+        align-items: center
+
       h3
         text-transform: uppercase
         color: $h2-color
@@ -39,8 +43,12 @@
       .first-col-cont
         margin-right: 74px
         max-width: 170px
+        @media only screen and (max-width: 685px)
+          margin-right: 0
         .first-head-wrap
           padding-right: 26px
+          @media only screen and (max-width: 685px)
+            padding-right: 0
         h3:first-of-type
           margin-bottom: 22px
 
@@ -49,9 +57,16 @@
           font-size: 12px
           text-align: center
           color: $nav-bg
+          @media only screen and (max-width: 685px)
+            margin-bottom: 30px
+
       .second-col-cont
         margin-right: 81px
         text-align: center
+        @media only screen and (max-width: 685px)
+          justify-content: center
+          display: flex
+          margin-right: 0
         .kpmg-circle
           width: 278px
           height: 278px
@@ -63,15 +78,15 @@
           align-items: center
           margin-top: 13px
           position: relative
-          &:before
-            position: absolute
-            content: ''
-            width: 12px
-            height: 12px
-            border-radius: 50%
-            background-color: $nav-bg
-            top: 81px
-            left: 5px
+          //&:before
+          //  position: absolute
+          //  content: ''
+          //  width: 12px
+          //  height: 12px
+          //  border-radius: 50%
+          //  background-color: $nav-bg
+          //  top: 81px
+          //  left: 5px
           &:after
             position: absolute
             content: ''
@@ -94,5 +109,7 @@
         h3:first-of-type
           margin-top: 11px
           margin-bottom: 199px
+          @media only screen and (max-width: 685px)
+            margin-bottom: 30px
       .col
         width: 100%

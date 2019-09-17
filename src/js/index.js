@@ -20,4 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
     }
+
+    const burgerMenu = document.querySelector(".burger-menu");
+    if (burgerMenu !== null) {
+        burgerMenu.addEventListener('click', () => {
+            const menu = document.querySelector(".nav-bar");
+            if(menu !== null) {
+                menu.classList.toggle('visible')
+            }
+        })
+    }
 });
